@@ -1,21 +1,35 @@
-// $(document).ready(function() {
 
-//  });
-// bộ lọc giới tính
-//định nghĩa lại hàm selectmenu trong ui
+//hàm tạo một màn đen mờ khi mở các tabs
+var manche = document.getElementById("manChanAll");
 
-///sử dụng selectmenu
-$('#bolocgt').iconselectmenu();
+function addManche(el, classname){
+   el.setAttribute('class', classname);
+}
+function delManche(el, classname){
+   el.setAttribute('class', classname)
+}
 
-
+//ham mo nhung tab an
  function showMyinfo(idinfo){
      document.getElementById(idinfo).style.display='block';
     //  document.getElementsByClassName("yourinfo").style.backgroundColor='black';
+    addManche(manche, 'manChanAll');
  }
+ function openAny(idtabsop){
+   document.getElementById(idtabsop).style.display='block';
+   addManche(manche, 'manChanAll');
+}
+
+//ham dong những tab ẩn
+function closeAny(idtabscl){
+   document.getElementById(idtabscl).style.display='none';
+   delManche(manche, '');
+}
 
  function exitButton(){
     document.getElementById("myinfomation").style.display='none';
     // document.getElementById("myinfomation").style.backgroundColor='#00a1f2';
+    delManche(manche, '');
  }
 
  function showBoloc(){
@@ -65,10 +79,10 @@ function openTabrank(tabsexs){
 // });
 
 // AJAX để up ảnh
-var xhttp;
-if (window.XMLHttpRequest){
-   xhttp= new XMLHttpRequest();
-   } else {
-    //tao doi tuong ActiveXObject neu trinh duyet khong ho tro XMLHttpRequest
-   xhttp= new ActiveXObject("Microsoft.XMLHTTP");
-}
+// var xhttp;
+// if (window.XMLHttpRequest){
+//    xhttp= new XMLHttpRequest();
+//    } else {
+//     //tao doi tuong ActiveXObject neu trinh duyet khong ho tro XMLHttpRequest
+//    xhttp= new ActiveXObject("Microsoft.XMLHTTP");
+// }

@@ -13,12 +13,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap" rel="stylesheet">
 <!--	<script src="https://kit.fontawesome.com/aa97e6aad9.js" crossorigin="anonymous"></script>-->
 	<link href="../vendors/icon/css/all.css" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+	<script src="../vendors/js/jquery.min.js"></script>
+	<script src="../vendors/js/jquery.form.js"></script>
 <!-- jquery-ui -->
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
 	<!-- <link rel="stylesheet" href="../vendors/css/bootstrap.css"> -->
 	<script src="../resources/script/javascript.js" type="text/javascript"></script>
+	<script src="../resources/script/hjavascript.js" type="text/javascript"></script>
 	<link href="../resources/css/styles.css" rel="stylesheet" type="text/css">
 	<link href="../resources/css/colors.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="../resources/css/hstyle.css">
@@ -46,15 +49,15 @@
 	<div class="letrai">
 		<button onclick="showMyinfo('myinfomation')" class="fas fa-user-circle icsip cu-p yourinfo"></button>
 		<button class="fas fa-comment-lines icsip cu-p message" ></button>
-		<button class="far fa-user-friends icsip cu-p knews"></button>
+		<!-- <button class="far fa-user-friends icsip cu-p knews"></button> -->
 		<button class="fal fa-chart-line icsip cu-p bxhcn"></button>
 		<button class="far fa-star icsip cu-p careful"></button>
 		
-		<label class="switch">
+		<!-- <label class="switch">
 		<input type="checkbox">
 		<span class="slider round"></span>
 		</label>
-		
+		 -->
 			
 	</div>
 
@@ -62,7 +65,9 @@
 <!--content-->
 
 <div class="content">
-	<input class="mycreats cu-p" type="button" value="Đăng bài của bạn">
+    <div id="manChanAll"></div>
+
+	<input onclick="openAny('createtus')" class="mycreats cu-p" type="button" value="Đăng bài của bạn">
 
 	<div id="menuno1" >
 		<ul class="tabmenu1">
@@ -303,26 +308,32 @@
 
 	
 <!-- form đăng bài -->
-<div class="createtus">
+<div class="createtus" id="createtus">
 	<div class="headhs whead">
 		<div class="avt posiavths"></div>
 		<div id="nickname">Phúc Vinh</div>
-		<button class="far fa-times-circle cu-p icsip banthems"></button>
+		<button class="far fa-times cu-p icsip exit" onclick="closeAny('createtus')"></button>
 	</div>
 	<div class="mytus">
 
 	</div>
-	<div class="myimage">
-		<input type="file" name="inputimage" id="upanh">
+		<form id="imageform" method="post" enctype="multipart/form-data" action='doajax.php'>
+			<div class="myimage" id="preview"></div>
+			<div class="customupanh">
+				<span class="fakeicon">+</span>
+				<p class="themanh">Thêm ảnh</p>
+				<input type="file" name="upanh" id="upanh" class="upanh">
+			</div>
+		</form>
+		
+	<div class="libralytus">
+
 	</div>
-	<div> </div>
-	<input type="button" value="Đăng">
+	<input type="submit" value="Đăng" class="danganhlen">
 </div>
 
 
-
-
-
+<script src="../resources/script/javascript.js" type="text/javascript"></script>
 
 </body>
 </html>
