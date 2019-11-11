@@ -1,3 +1,18 @@
+/* Man chan */
+.manChanAll{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: #000;
+	filter: opacity(0.7);
+	z-index: 100;
+}
+
+
+
+/* tab myinfo */
 .myinfomation{
 	position: fixed;
 	top: 0px;
@@ -61,8 +76,9 @@
 }
 
 .exit{
+	font-size: 24px;
 	position: absolute;
-	right: 5px;
+	right: 2px;
 	top: 0px;
 	border-top-right-radius: 8px;
 }
@@ -72,20 +88,22 @@
 /* form đăng bài */
 .createtus{
     position: fixed;
-    top: 6px;
-    left: 20px;
+    top: 0px;
+    left: 280px;
 	width: 500px;
 	height: 590px;
 	border: 1px #00a1f2 solid;
-	background-color: #504768;
-	z-index: 100;
+	background-color: #eeeeee;
+	z-index: 1000;
 	margin: 58px 70px;
 	border-radius: 8px;
-	display: block;
+	display: none;
+
 
 }
 .whead{
-    width: 500px;
+	width: 500px;
+	border: none;
 }
 .mytus{
     position: absolute;
@@ -96,13 +114,91 @@
 }
 .myimage{
     position: absolute;
-    top: 142px;
-    width: 499px;
-    height: 282px;
-    border: springgreen 1px solid;
+	top: 142px;
+	/* width: 499px;
+	height: 282px; */
+    max-width: 499px;
+	max-height: 282px;
+	border: none;
+	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 100;
+	overflow: hidden;
+	color: black;
 }
-#upanh{
-    width: 100px;
-    height: 100px;
-    border: gray 2px dashed;
+.preview{
+    width: 499px;
+	height: 282px;
+	object-position: center center;
+	-o-object-position: center center;
+	object-fit: cover;
+	-o-object-fit: cover;
+	/* border: blue 3px solid; */
+}
+.customupanh{
+	position: absolute;
+	overflow: hidden;
+	background-color: #FCFBFB;
+	height: 110px;
+	width: 110px;
+	text-align: center;
+	border: 2px gray dashed;
+	top: 220px;
+	left: 180px;
+}
+.fakeicon{
+	margin-left: -30px;
+	position: absolute;
+	font-size: 100px;
+	font-weight: bold;
+	font-family: arial;
+	color: #F172A1;
+}
+.themanh{
+	position: absolute;
+	margin-left: 3px;
+	margin-top: 90px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: arial;
+	color: #585858;
+}
+.upanh{
+    width: 110px;
+    height: 110px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	text-align: center;
+}
+
+
+
+/* thư viện tus */
+.libralytus{
+	position: relative;
+	width: 500px;
+	height: 120px;
+	background-color: blueviolet;
+	top: 430px;
+}
+
+.danganhlen{
+	position: absolute;
+	width: 500px;
+	height: 40px;
+	background-color: chocolate;
+	bottom: 0px;
+	border: none;
+	outline: none;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
