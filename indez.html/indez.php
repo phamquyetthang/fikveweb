@@ -20,11 +20,13 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
 	<!-- <link rel="stylesheet" href="../vendors/css/bootstrap.css"> -->
-	<script src="../resources/script/javascript.js" type="text/javascript"></script>
-	<script src="../resources/script/hjavascript.js" type="text/javascript"></script>
+	
 	<link href="../resources/css/styles.css" rel="stylesheet" type="text/css">
 	<link href="../resources/css/colors.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="../resources/css/hstyle.css">
+
+	<script src="../resources/script/hjavascript.js" type="text/javascript"></script>
+    <!-- <script src="../resources/script/javascript.js" type="text/javascript"></script> -->
 </head>
 
 <body>
@@ -36,22 +38,22 @@
 		</div>
 		<div id="title">Fikve</div>
 		
-		<div><button class="fas fa-bell icsip cu-p news"></button></div>
+		<div><button class="fas fa-bell icsip cu-p news" title="Thông báo"></button></div>
 		
-		<div><button class="fas fa-heart-circle icsip cu-p moneys"></button></div>
+		<div><button class="fas fa-heart-circle icsip cu-p moneys" title="heart coin"></button></div>
 		
-		<div><button class="fas fa-align-justify icsip cu-p options"></button></div>
+		<div><button class="fas fa-align-justify icsip cu-p options" title="tùy chọn"></button></div>
 	</header>
 	
 <!--//////////-->
 <!--	lề trái-->
 
 	<div class="letrai">
-		<button onclick="showMyinfo('myinfomation')" class="fas fa-user-circle icsip cu-p yourinfo"></button>
-		<button class="fas fa-comment-lines icsip cu-p message" ></button>
+		<button onclick="showMyinfo('myinfomation')" class="fas fa-user-circle icsip cu-p yourinfo" title="Thông tin của bạn"></button>
+		<button class="fas fa-comment-lines icsip cu-p message" onclick="openAny('mymess')" title="Tin nhắn"></button>
 		<!-- <button class="far fa-user-friends icsip cu-p knews"></button> -->
-		<button class="fal fa-chart-line icsip cu-p bxhcn"></button>
-		<button class="far fa-star icsip cu-p careful"></button>
+		<button class="fal fa-chart-line icsip cu-p bxhcn" title="Theo dõi cá nhân"></button>
+		<button class="far fa-star icsip cu-p careful" title="Người bạn quan tâm"></button>
 		
 		<!-- <label class="switch">
 		<input type="checkbox">
@@ -63,24 +65,24 @@
 
 <!--//////////-->
 <!--content-->
-
+<div id="manChanAll"></div>
 <div class="content">
-    <div id="manChanAll"></div>
+    
 
 	<input onclick="openAny('createtus')" class="mycreats cu-p" type="button" value="Đăng bài của bạn">
 
 	<div id="menuno1" >
 		<ul class="tabmenu1">
 			<li><a onclick="openTabs('tab1')" class="fas fa-street-view cu-p icsip setcons">
-					<span class="textinli1">Xung quanh</span>
+					<span class="textinli1" title="Tìm kiếm theo khu vực">Xung quanh</span>
 				</a
 			></li>
 			<li><a onclick="openTabs('tab2')" class="fas fa-book-heart cu-p icsip setcons">
-					<span class="textinli1">Đã biết</span>
+					<span class="textinli1" title="Những người bạn đã biết">Đã biết</span>
 				</a>
 			</li>
 			<li><a onclick="openTabs('tab3')" class="fas fa-analytics cu-p icsip setcons">
-					<span class="textinli1">Trend</span>
+					<span class="textinli1" title="Những bài viết xu hướng">Trend</span>
 				</a>
 			</li>
 			
@@ -101,7 +103,7 @@
 				<div id="nickname">Nguyễn Thị Tý</div>
 				<div id="timeoftus">1000s</div>
 				<div id="khoangcach">3km</div>
-				<button class="far fa-times-circle cu-p icsip banthems"></button>
+				<button class="far fa-times cu-p icsip banthems"></button>
 			</div>
 			<div class="statushs">
 				Thiếu một nửa tôi đi tìm một nửa</br>
@@ -119,63 +121,173 @@
 			</div>
 		</div>
 		<div class="hop1s">
-				<div class="headhs">
-					<div class="avt posiavths"></div>
-					<div id="nickname"></div>
-					<div id="timeoftus"></div>
-					<div id="khoangcach"></div>
-					<button class="far fa-times-circle cu-p icsip banthems"></button>
-				</div>
-				<div class="statushs"></div>
-				<div class="contenths img2">
-					<button class="fal fa-info-circle cu-p report"></button>
-				</div>
-				<div class="endhs">
-						<button class="fad fa-heart cu-p icsip thatims"></button>
-						<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
-						<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
-						<button class="fad fa-star cu-p icsip quantams"></button>
-	
-				</div>
+			<div class="headhs">
+				<div class="avt posiavths"></div>
+				<div id="nickname"></div>
+				<div id="timeoftus"></div>
+				<div id="khoangcach"></div>
+				<button class="far fa-times cu-p icsip banthems"></button>
 			</div>
-			
-	</div>
+			<div class="statushs"></div>
+			<div class="contenths  ">
+				<button class="fal fa-info-circle cu-p report"></button>
+			</div>
+			<div class="endhs">
+					<button class="fad fa-heart cu-p icsip thatims"></button>
+					<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
+					<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
+					<button class="fad fa-star cu-p icsip quantams"></button>
 	
+			</div>
+		</div>
+		<div class="hop1s">
+			<div class="headhs">
+				<div class="avt posiavths"></div>
+				<div id="nickname"></div>
+				<div id="timeoftus"></div>
+				<div id="khoangcach"></div>
+				<button class="far fa-times cu-p icsip banthems"></button>
+			</div>
+			<div class="statushs"></div>
+			<div class="contenths  ">
+				<button class="fal fa-info-circle cu-p report"></button>
+			</div>
+			<div class="endhs">
+					<button class="fad fa-heart cu-p icsip thatims"></button>
+					<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
+					<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
+					<button class="fad fa-star cu-p icsip quantams"></button>
+	
+			</div>
+		</div>
+		<div class="hop1s">
+			<div class="headhs">
+				<div class="avt posiavths"></div>
+				<div id="nickname"></div>
+				<div id="timeoftus"></div>
+				<div id="khoangcach"></div>
+				<button class="far fa-times cu-p icsip banthems"></button>
+			</div>
+			<div class="statushs"></div>
+			<div class="contenths  ">
+				<button class="fal fa-info-circle cu-p report"></button>
+			</div>
+			<div class="endhs">
+					<button class="fad fa-heart cu-p icsip thatims"></button>
+					<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
+					<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
+					<button class="fad fa-star cu-p icsip quantams"></button>
+	
+			</div>
+		</div>
+		<div class="hop1s">
+			<div class="headhs">
+				<div class="avt posiavths"></div>
+				<div id="nickname"></div>
+				<div id="timeoftus"></div>
+				<div id="khoangcach"></div>
+				<button class="far fa-times cu-p icsip banthems"></button>
+			</div>
+			<div class="statushs"></div>
+			<div class="contenths  ">
+				<button class="fal fa-info-circle cu-p report"></button>
+			</div>
+			<div class="endhs">
+					<button class="fad fa-heart cu-p icsip thatims"></button>
+					<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
+					<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
+					<button class="fad fa-star cu-p icsip quantams"></button>
+	
+			</div>
+		</div>
+	</div>
+		
 
 	<div id="tab2" class="tabcontents" style="display: none;">
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
+		<div class="hop1s">
+			<div class="headhs">
+				<div class="avt posiavths"></div>
+				<div id="nickname"></div>
+				<div id="timeoftus"></div>
+				<div id="khoangcach"></div>
+				<button class="far fa-times-circle cu-p icsip banthems"></button>
+			</div>
+			<div class="statushs"></div>
+			<div class="contenths">
+				<button class="fal fa-info-circle cu-p report"></button>
+			</div>
+			<div class="endhs">
+					<button class="fad fa-heart cu-p icsip thatims"></button>
+					<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
+					<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
+					<button class="fad fa-star cu-p icsip quantams"></button>
 
-		ccccccccccccccccccccccccccccccccccccassfsaf</br>
+			</div>
+		</div>
+		<div class="hop1s">
+			<div class="headhs">
+				<div class="avt posiavths"></div>
+				<div id="nickname"></div>
+				<div id="timeoftus"></div>
+				<div id="khoangcach"></div>
+				<button class="far fa-times-circle cu-p icsip banthems"></button>
+			</div>
+			<div class="statushs"></div>
+			<div class="contenths">
+				<button class="fal fa-info-circle cu-p report"></button>
+			</div>
+			<div class="endhs">
+					<button class="fad fa-heart cu-p icsip thatims"></button>
+					<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
+					<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
+					<button class="fad fa-star cu-p icsip quantams"></button>
+
+			</div>
+		</div>
 	</div>
 
 
 	<div id="tab3" class="tabcontents" style="display: none;">
+		<div class="hop1s">
+			<div class="headhs">
+				<div class="avt posiavths"></div>
+				<div id="nickname"></div>
+				<div id="timeoftus"></div>
+				<div id="khoangcach"></div>
+				<button class="far fa-times-circle cu-p icsip banthems"></button>
+			</div>
+			<div class="statushs"></div>
+			<div class="contenths">
+				<button class="fal fa-info-circle cu-p report"></button>
+			</div>
+			<div class="endhs">
+					<button class="fad fa-heart cu-p icsip thatims"></button>
+					<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
+					<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
+					<button class="fad fa-star cu-p icsip quantams"></button>
 
-		hahahahahahahahahahahhahahahahahahah</br>
-		hahahahahahahahahahahhahahahahahahah</br>
-		hahahahahahahahahahahhahahahahahahah</br>
-		hahahahahahahahahahahhahahahahahahah</br>
-		hahahahahahahahahahahhahahahahahahah</br>
-		hahahahahahahahahahahhahahahahahahah</br>
-		hahahahahahahahahahahhahahahahahahah</br>hahahahahahahahahahahhahahahahahahah</br>
+			</div>
+		</div>
+		<div class="hop1s">
+			<div class="headhs">
+				<div class="avt posiavths"></div>
+				<div id="nickname"></div>
+				<div id="timeoftus"></div>
+				<div id="khoangcach"></div>
+				<button class="far fa-times-circle cu-p icsip banthems"></button>
+			</div>
+			<div class="statushs"></div>
+			<div class="contenths">
+				<button class="fal fa-info-circle cu-p report"></button>
+			</div>
+			<div class="endhs">
+					<button class="fad fa-heart cu-p icsip thatims"></button>
+					<button class="fas fa-comment-alt-edit cu-p icsip binhluans"></button>
+					<button class="fas fa-comment-plus cu-p icsip chonnhans"></button>
+					<button class="fad fa-star cu-p icsip quantams"></button>
 
-		hahahahahahahahahahahhahahahahahahah</br>
-
+			</div>
+		</div>
 	</div>
 
 
@@ -296,8 +408,33 @@
 <!-- thong tin chinh minh -->
 	<div class="myinfomation" id="myinfomation">
 		<div class="infoleft">
-			<div class="avttop"></div>
-			<div class="infobottom"></div>
+			<div class="avttop">
+				
+			</div>
+			<div class="infobottom">
+				<div id="myNameinfo">
+					<span>Tên</span>
+					<?php
+						echo ('helo');
+					?>
+				</div>
+				<div id="nickNameinfo">
+					<span>Nick name</span>
+				</div>
+				<div id="myage">
+					<span>Tuổi</span>
+				</div>
+				<div id="mygender">
+					<span>Giới tính</span>
+				</div>
+				<div id="myslogan">
+					<span>Slogan</span>
+				</div>
+
+				<div id="moreinfo">
+					<span>Nói thêm về bạn</span>
+				</div>
+			</div>
 		</div>
 		<div class="hisright">
 			<div class="far fa-times cu-p icsip exit" onclick="exitButton()"></div>
@@ -333,6 +470,38 @@
 </div>
 
 
+<!-- tabs tin nhắn -->
+<div class="mymess" id="mymess">
+	<div class="leftmess">
+		<div class="kindleft">
+			<button class="kindcon" id="nguoila">Người lạ</button>
+			<button class="kindcon" id="nguoiquen">Người quen</button>
+		</div>
+		<div class="listmess">
+			<div id="eachmess"></div>
+		</div>
+	</div>
+	<div class="rightmess">
+		<div class="headright">
+			<div id="avtmess" class="avt"></div>
+			<div id="money" class="fas fa-heart-circle icsip cu-p"></div>
+			<button onclick="closeAny('mymess')" class="far fa-times cu-p icsip" id="exitmess"></button>
+		</div>
+		<div class="contentmess"></div>
+		<div class="chucnangmess">
+			<button id="askname" class="cu-p askinfo"></button>
+			<button id="askphone" class="cu-p askinfo"></button>
+			<button id="askpos" class="cu-p askinfo"></button>
+			<button id="tangqua" class="cu-p askinfo"></button>
+			<button id="morongcn" class="cu-p askinfo"></button>
+		</div>
+		<div class="nhaptinnhan">
+			<input type="text" name="onhapmess" id="onhapmess" placeholder="Soạn tin nhắn">
+			<button id="sendmess" class="fal fa-paper-plane cu-p icsip"></button>
+		</div>
+	</div>
+</div>
+<!-- <script src="../resources/script/hjavascript.js" type="text/javascript"></script> -->
 <script src="../resources/script/javascript.js" type="text/javascript"></script>
 
 </body>

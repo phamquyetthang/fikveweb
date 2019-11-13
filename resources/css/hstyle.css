@@ -19,8 +19,8 @@
 	width: 965px;
 	height: 590px;
 	border: 1px #00a1f2 solid;
-	background-color: #504768;
-	z-index: 100;
+	background-color: #eee;
+	z-index: 1000;
 	margin: 58px 70px;
 	border-radius: 8px;
 	display: none;
@@ -31,7 +31,7 @@
 	width: 400px;
 	top: 0px;
 	left: 0px;
-	background-color: #F172A1;
+	/* background-color: #F172A1; */
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
@@ -63,12 +63,20 @@
 	position: absolute;
 	width: 400px;
 	height: 250px;
-	background-color: darkorchid;
+	/* background-color: darkorchid; */
+	border-top: #979A9A 1px solid;
+	border-right: #979A9A 1px solid;
 	bottom: 0px;
 	left: 0px;
 	border-bottom-left-radius: 8px;
+	color: #000;
 }
-
+.infobottom div{
+	color: #000;
+}
+.infobottom span{
+	color: #000;
+}
 .myhis{
 	position: absolute;
 	top: 40px;
@@ -81,6 +89,7 @@
 	right: 2px;
 	top: 0px;
 	border-top-right-radius: 8px;
+	color: #585858;
 }
 
 
@@ -201,4 +210,169 @@
 	outline: none;
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
+}
+
+
+/* tabs nhan tin/ */
+
+.mymess{
+	position: fixed;
+	top: 0px;
+	width: 965px;
+	height: 590px;
+	border: 1px #00a1f2 solid;
+	background-color: #eeeeee;
+	z-index: 1000;
+	margin: 58px 70px;
+	border-radius: 5px;
+	display: none;
+	color: #585858;
+}
+.leftmess{
+	position: absolute;
+	height: 100%;
+	width: 250px;
+	/* background-color: #F172A1; */
+	border-right: thistle 1px solid;
+	border-bottom-left-radius: 5px;
+}
+.kindleft{
+	position: absolute;
+	width: 100%;
+	height: 42px;
+	/* background-color: aqua; */
+	padding: 0px;
+	border-bottom: #979A9A 1px solid;
+
+}
+.kindcon{
+	/* display: inline-block; */
+	width: 125px;
+	height: 42px;
+	background-color:#F172A1;
+	border: none;
+	outline: none;
+	margin: 0px;
+	float: left;
+	color: #000;
+	font-size: 18px;
+}
+.kindcon:hover{
+	background-color: #E64398;
+}
+#nguoila{
+	border-top-left-radius: 5px;
+	border-right: #979A9A 1px solid;
+}
+.listmess{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 547px;
+	/* background-color: cornflowerblue; */
+	border-bottom-left-radius: 5px;
+}
+
+.rightmess{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 714px;
+	height: 100%;
+
+	display: inline-block;
+}
+.headright{
+	width: 100%;
+	height: 42px;
+	background-color: hotpink;
+	border-bottom: #979A9A 1px solid;
+	border-top-right-radius: 5px;
+}
+#avtmess{
+	position: absolute;
+	left: 3px;
+}
+#money{
+	position: absolute;
+	/* color: #F172A1; */
+	border-radius: 50%;
+	top: 5px;
+	right: 70px;
+}
+#exitmess{
+	font-size: 24px;
+	position: absolute;
+	right: 2px;
+	top: 8px;
+	color: #585858;
+}
+
+.contentmess{
+	width: 100%;
+	height: 455px;
+	border-bottom: thistle 1px solid;
+}
+.chucnangmess{
+	width: 100%;
+	height: 40px;
+	color: #00a1f2;
+	border-bottom:thistle 1px solid;
+}
+.askinfo{
+	background-size: cover;
+	background-position: center;
+	margin: 3px;
+	margin-left: 10px;
+	width: 32px;
+	height: 32px;
+	border: none;
+	outline: none;
+	background-color: #F172A1;
+	border-radius: 5px;
+	padding: 2px;
+}
+#askname{
+	background-image: url(../img/askname.png);
+}
+#askphone{
+	background-image: url(../img/askphone.png);
+}
+#askpos{
+	background-image: url(../img/askpos.png);
+}
+#tangqua{
+	background-image: url(../img/gift.png);
+	position: absolute;
+	margin-top: 3px;
+	right: 70px;
+}
+#morongcn{
+	position: absolute;
+	margin-top: 3px;
+	right: 2px;
+}
+.nhaptinnhan{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+
+}
+#onhapmess{
+	width: 660px;
+	height: 40px;
+	margin: 2px;
+	text-align: left;
+	color: #000;
+	font-size: 18px;
+	padding-top: 2px;
+	padding-left: 2px;
+	border: none;
+}
+#sendmess{
+	position: absolute;
+	right: 2px;
+	top: 8px;
+	color: black;
 }

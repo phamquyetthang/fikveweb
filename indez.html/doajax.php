@@ -31,3 +31,4 @@ if (isset($_POST)) { // Kiểm tra tồn tại post request
 }
 
 
+?>
