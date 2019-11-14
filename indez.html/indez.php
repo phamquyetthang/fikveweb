@@ -414,8 +414,10 @@
 			<div class="infobottom">
 				<div id="myNameinfo">
 					<span>Tên</span>
-					<?php
-						echo ('helo');
+					<?php include ('C:/xampp/htdocs/fikveweb/fikveweb/controller/selectdata.php');
+
+					echo ($myname);
+						//echo ('helo');
 					?>
 				</div>
 				<div id="nickNameinfo">
