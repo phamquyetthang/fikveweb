@@ -235,7 +235,7 @@ iframe {
   font-family: 'Baloo Bhai', cursive;
   font-size: 400%;
   color: #F172A1;
-  line-height: 1.2;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
 
@@ -557,4 +557,32 @@ iframe {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+
+.input101{
+  background-color: #dddddd;
+  border-radius: 3px;
+  padding-left: 10px;
+  width: 140px;
+  height: 50px;
+}
+.input102{
+  background-color: #dddddd;
+  border-radius: 3px;
+  padding-left: 10px;
+  width: 60px;
+  height: 50px;
+  position: relative;
+  right: 5px;
+}
+
+.input103{
+  background-color: #dddddd;
+  border-radius: 3px;
+  padding-left: 10px;
+  width: 120px;
+  height: 50px;
+  position: relative;
+  right: 0px;
 }
