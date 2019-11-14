@@ -376,3 +376,64 @@
 	top: 8px;
 	color: black;
 }
+
+#othongbao{
+	position: fixed;
+	top: 48px;
+	right: 260px;
+	width: 150px;
+	height: 200px;
+	background-color: white;
+	border: thistle 1px solid;
+	border-radius: 5px;
+	z-index: 1000;
+	display: none;
+}
+
+#sukienhai{
+	position: fixed;
+	top: 0px;
+	width: 280px;
+	height: 50px;
+	background-color: unset;
+	z-index: 100;
+	right: 30px;
+	display: none;
+}
+#sukienhai button{
+	width: 85px;
+	height: 50px;
+	background-color: unset;
+	border: none;
+}
+#omoney{
+	position: fixed;
+	top: 48px;
+	right: 130px;
+	width: 150px;
+	height: 200px;
+	background-color: white;
+	border: thistle 1px solid;
+	border-radius: 5px;
+	z-index: 1000;
+	display: none;
+}
+#omoney button{
+	color: black;
+}
+#otuychon{
+	position: fixed;
+	top: 48px;
+	right: 0px;
+	width: 150px;
+	height: 200px;
+	background-color: white;
+	border: thistle 1px solid;
+	border-radius: 5px;
+	z-index: 1000;
+	display: none;
+	
+}
+#otuychon span{
+	color: black;
+}

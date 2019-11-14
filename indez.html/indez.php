@@ -38,11 +38,14 @@
 		</div>
 		<div id="title">Fikve</div>
 		
-		<div><button class="fas fa-bell icsip cu-p news" title="Thông báo"></button></div>
+		<div>
+			<button class="fas fa-bell icsip cu-p news" title="Thông báo" onclick="openLit('othongbao', 'sukienhai')">
+			</button>
+		</div>
 		
-		<div><button class="fas fa-heart-circle icsip cu-p moneys" title="heart coin"></button></div>
+		<div><button class="fas fa-heart-circle icsip cu-p moneys" title="heart coin" onclick="openLit('omoney', 'sukienhai')"></button></div>
 		
-		<div><button class="fas fa-align-justify icsip cu-p options" title="tùy chọn"></button></div>
+		<div><button class="fas fa-align-justify icsip cu-p options" title="tùy chọn" onclick="openLit('otuychon', 'sukienhai')"></button></div>
 	</header>
 	
 <!--//////////-->
@@ -502,6 +505,23 @@
 			<button id="sendmess" class="fal fa-paper-plane cu-p icsip"></button>
 		</div>
 	</div>
+</div>
+
+<div id="othongbao">
+
+
+</div>
+<div id="sukienhai">
+	<button onclick="closeLit('othongbao','sukienhai')"></button>
+	<button onclick="closeLit('omoney','sukienhai')"></button>
+	<button onclick="closeLit('otuychon','sukienhai')"></button>
+</div>
+<div id="omoney">
+	<button class="naptien">Nạp vào tài khoản</button>
+</div>
+<div id="otuychon">
+	<a class="logout " href="../indez.html/first.php"><span>Đăng xuất</span></a>
+	<button class="caidat"><span>Cài Đặt</span></button>
 </div>
 <!-- <script src="../resources/script/hjavascript.js" type="text/javascript"></script> -->
 <script src="../resources/script/javascript.js" type="text/javascript"></script>

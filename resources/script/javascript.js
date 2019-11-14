@@ -19,6 +19,10 @@ function delManche(el, classname){
    document.getElementById(idtabsop).style.display='block';
    addManche(manche, 'manChanAll');
 }
+function openLit(idlit, idsk2){
+   document.getElementById(idlit).style.display='block';
+   document.getElementById(idsk2).style.display='block';
+}
 
 //ham dong những tab ẩn
 function closeAny(idtabscl){
@@ -31,6 +35,12 @@ function closeAny(idtabscl){
     // document.getElementById("myinfomation").style.backgroundColor='#00a1f2';
     delManche(manche, '');
  }
+ function closeLit(idlit, idsk2){
+   document.getElementById(idlit).style.display='none';
+   document.getElementById(idsk2).style.display='none';
+}
+
+
 
  function showBoloc(){
     var sex =  document.querySelectorAll(".sexisms2");
