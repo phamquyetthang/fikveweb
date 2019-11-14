@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="../resources/css/hstyle.css">
 
 	<script src="../resources/script/hjavascript.js" type="text/javascript"></script>
-    <!-- <script src="../resources/script/javascript.js" type="text/javascript"></script> -->
+    <script src="../resources/script/javascript.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -417,9 +417,10 @@
 			<div class="infobottom">
 				<div id="myNameinfo">
 					<span>Tên</span>
-					<?php include ('C:/xampp/htdocs/fikveweb/fikveweb/controller/selectdata.php');
+					<?php 
+					// include ('C:/xampp/htdocs/fikveweb/fikveweb/controller/selectdata.php');
 
-					echo ($myname);
+					// echo ($myname);
 						//echo ('helo');
 					?>
 				</div>
@@ -508,8 +509,7 @@
 </div>
 
 <div id="othongbao">
-
-
+abcsd
 </div>
 <div id="sukienhai">
 	<button onclick="closeLit('othongbao','sukienhai')"></button>
