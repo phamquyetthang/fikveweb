@@ -25,13 +25,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap" rel="stylesheet">
+	<link href="../vendors/icon/css/all.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-50 p-b-20">
+				<a id="back" class="far fa-times eback" href="../indez.html/first.php"></a>
 				<form class="login100-form validate-form" method="post">
+					
 					<span class="login100-form-title p-b-20">
 						Fikve
 					</span>

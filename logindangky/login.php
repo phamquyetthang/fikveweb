@@ -25,12 +25,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap" rel="stylesheet">
+	<link href="../vendors/icon/css/all.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+			<a id="back" class="far fa-times eback" href="../indez.html/first.php"></a>
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-55">
 						Fikve
@@ -60,9 +62,9 @@
 					</div>
 					
 					<div class="container-login100-form-btn p-t-25">
-						<button class="login100-form-btn">
+						<a class="login100-form-btn" href="../indez.html/indez.php">
 							Đăng nhập
-						</button>
+						</a>
 					</div>
 
 					<!-- <div class="text-center w-full p-t-42 p-b-22">
