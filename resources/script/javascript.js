@@ -12,7 +12,6 @@ function delManche(el, classname){
 //ham mo nhung tab an
  function showMyinfo(idinfo){
      document.getElementById(idinfo).style.display='block';
-    //  document.getElementsByClassName("yourinfo").style.backgroundColor='black';
     addManche(manche, 'manChanAll');
  }
  function openAny(idtabsop){
